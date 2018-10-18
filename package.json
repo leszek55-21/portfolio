@@ -1,17 +1,26 @@
 {
-  "name": "modern_portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "Responsive portfolio website",
   "main": "index.js",
-  "homepage": "https://leszek55-21.github.io/portfolio"
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.9.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leszek55-21/portfolio.git"
   },
   "author": "Leszek Szymaszek",
-  "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^1.2.0",
-    "node-sass": "^4.9.2"
-  }
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leszek55-21/portfolio/issues"
+  },
+  "homepage": "https://github.com/leszek55-21/portfolio#readme"
 }
