@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
+  <title>View My Work</title>
+  <style>
+    h4, h5, h6, p {
+    color: #2E2E2E;
+    margin-bottom: 3px;
+  }
+  
+  .fas, .fab {
+    color: green;
+  }
+  
+  .card-header {
+    color: black;
+  }
+  
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            About Me
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="work.html" class="nav-link">
+            My Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="courses.html" class="nav-link">
+            Courses & Skills
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            Contact Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="work">
+    <h1 class="lg-heading">
+      My
+      <span class="text-secondary" style="color: #ffc107;">Work</span>
+    </h1>
+    <h2 class="sm-heading">
+      Check out some of my projects...
+    </h2>
+    <div class="projects">
+      <div class="item">
+        <a href="#myModal1" data-toggle="modal" data-target="#myModal1">
+          <img src="img/projects/bike-warehouse-app.jpg" alt="Project">
+        </a>
+        <a href=href="#myModal1" data-toggle="modal" data-target="#myModal1" class="btn-light">
+          <i class="fas fa-eye"></i> Project - Bike Warehouse
+        </a>
+        <a href="https://github.com/leszek55-21/bike-warehouse-repo" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      
+      <div class="item">
+        <a href="#myModal2" data-toggle="modal" data-target="#myModal2">
+          <img src="img/projects/camping-picker.jpg" alt="Project">
+        </a>
+        <a href="#myModal2" data-toggle="modal" data-target="#myModal2" class="btn-light">
+          <i class="fas fa-eye"></i> Project - Campings Picker
+        </a>
+        <a href="https://github.com/leszek55-21/campings-app" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      
+      <div class="item">
+        <a href="#myModal3" data-toggle="modal" data-target="#myModal3">
+          <img src="img/projects/guess-the-number.jpg" alt="Project">
+        </a>
+        <a href="#myModal3" data-toggle="modal" data-target="#myModal3" class="btn-light">
+          <i class="fas fa-eye"></i> Project - Guess The Number Game
+        </a>
+        <a href="https://github.com/leszek55-21/guess-the-number" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      
+      <div class="item">
+        <a href="#myModal4" data-toggle="modal" data-target="#myModal4">
+          <img src="img/projects/bike-warehouse-app.jpg" alt="Project">
+        </a>
+        <a href="#myModal3" data-toggle="modal" data-target="#myModal3" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="#" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      
+    </div>
+  </main>
+  
+
+<!-- Modal 1-->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="align-items:center;">
+      <div class="modal-header" style="align-self: normal;">
+        <h4 class="modal-title">Bike Warehouse Project</h4>
+        <span><button type="button" class="close" data-dismiss="modal">&times;</button></span>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Description -->
+        <h5>Bike Warehouse is a webapplication designed for companies specialized in trading bikes. 
+           Users can browse bikes like in catalogue and also add own comments. Admin funcionality is much wider...
+        </h5>
+        <hr>
+        
+        <!-- Functionality -->
+        
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                 Guest functionality
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Browsing bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Searching bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Sorting bikes - few kinds</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Displaying user profiles</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                 User functionality
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Guest functionality</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Adding comments to bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Removing own comments</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                 Admin functionality
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> User functionality</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Adding new bike</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Editing existing bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Deleting bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Various supply summary</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Searching users</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Deleting users</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Giving Admin authority to users</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        
+        <!-- Videos, diagrams, schemas -->
+        
+        <p>Below a video presenting application abilities...</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <hr>
+        <p>... and the app code presentation</p>
+        <iframe  width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <hr>
+        <p>Diagram demonstrating simplified application workflow</p>
+        <div><img class="img-responsive img-thumbnail" src="img/projects/diagram-bike-warehouse.jpg"></div>
+        <hr>
+        <p>MySQL database structure</p>
+        <div><img class="img-responsive img-thumbnail" src="img/projects/db-schema-bike-warehouse.jpg"></div>
+      </div>
+      <hr>
+      
+      <!-- Technologies used -->
+      
+      <h5 style="text-align: center">Technologies used</h5>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+               Backend
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Java 10</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Spring 5 (Security, MVC, Core)</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Hibernate 5 (CRUD, Validator)</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Maven</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> MySQL</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+               Frontend
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-check-square"></i> HTML 5</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> CSS 3</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Bootstrap 4</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Font Awesome</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Date Picker</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> FancyBox - pictures preview</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      
+      <p><i class="fas fa-2x fa-calendar-alt"></i> Done: September 2018</p> 
+      <br>
+      <a href="https://github.com/leszek55-21/bike-warehouse-repo"><p><i class="fab fa-2x fa-github"></i> Github</p></a>
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close project details</button>
+      </div>
+    </div>
+
+  </div>
+</div> <!-- end of modal -->
+
+<!-- Modal 2-->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="align-items:center;">
+      <div class="modal-header" style="align-self: normal;">
+        <h4 class="modal-title">Campings Picker Project</h4>
+        <span><button type="button" class="close" data-dismiss="modal">&times;</button></span>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Description -->
+        <h5>Campings picker is an express application 
+        </h5>
+        <hr>
+        
+        <!-- Functionality -->
+        
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                 Guest functionality
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Browsing Campings</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Searching Campings</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Displaying Camp details with comments</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                 User functionality
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Guest functionality</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Adding own Campings</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Editing / Deleting own Campings</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Adding comments to Campings</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Editing / Deleting own comment</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                 Admin functionality
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> User functionality</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Full CRUD on all Campings</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Full CRUD on all comments</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        
+        <!-- Videos, diagrams, schemas -->
+        
+        <p>Below a video presenting application abilities...</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <hr>
+        <p>... and the app code presentation</p>
+        <iframe  width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <hr>
+        <p>MongoDB Models</p>
+        <div><img class="img-responsive img-thumbnail" src="img/projects/camping-picker-mongoDB-model.jpg"></div>
+        <hr>
+      </div>
+      <hr>
+      
+      <!-- Technologies used -->
+      
+      <h5 style="text-align: center">Technologies used</h5>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+               Backend
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Node.js</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Express webapp framework (EJS)</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> MongoDB - moongose</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Passport-local-moongose</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Moment.js</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+               Frontend
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-check-square"></i> HTML 5</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> CSS 3</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Bootstrap 3.3.7</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Connect-flash - flash messages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      
+      <p><i class="fas fa-2x fa-calendar-alt"></i> Done: May 2018</p> 
+      <br>
+      <a href="https://github.com/leszek55-21/campings-app"><p><i class="fab fa-2x fa-github"></i> Github</p></a>
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close project details</button>
+      </div>
+    </div>
+
+  </div>
+</div> <!-- end of modal -->
+
+<!-- Modal 3-->
+<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="align-items:center;">
+      <div class="modal-header" style="align-self: normal;">
+        <h4 class="modal-title">Guess the Number Game</h4>
+        <span><button type="button" class="close" data-dismiss="modal">&times;</button></span>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Description -->
+        <h5>Guess the Number Game is a multi module Spring Boot project, allowing to play in simple guessing number game on console and in the web browser.
+            Player has 10 chances to guess the number between 0 and 100, after each guess special messages are generated.
+        </h5>
+        <hr>
+        
+        <!-- Functionality -->
+        
+        <div class="card">
+          <div class="card-header">
+             Functionality
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-check-circle"></i> Console version</li>
+            <li class="list-group-item"><i class="fas fa-check-circle"></i> Browser version</li>
+            <li class="list-group-item"><i class="fas fa-check-circle"></i> 3 Language versions Polish, English, Spanish</li>
+          </ul>
+        </div>
+        <hr>
+        
+        <!-- Videos, diagrams, schemas -->
+        
+        <p>Below a video presenting application abilities...</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <hr>
+        <p>... and the app code presentation</p>
+        <iframe  width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <hr>
+      </div>
+      <hr>
+      
+      <!-- Technologies used -->
+      
+      <h5 style="text-align: center">Technologies used</h5>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+               Backend
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Java 10</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Spring 5 (MVC, Core)</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Spring Boot 2</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Maven</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Thymeleaf 3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+               Frontend
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-check-square"></i> HTML 5</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> CSS 3</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Bootstrap 4</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      
+      <p><i class="fas fa-2x fa-calendar-alt"></i> Done: June 2018</p> 
+      <br>
+      <a href="https://github.com/leszek55-21/guess-the-number"><p><i class="fab fa-2x fa-github"></i> Github</p></a>
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close project details</button>
+      </div>
+    </div>
+
+  </div>
+</div> <!-- end of modal -->
+
+<!-- Modal 4-->
+<div id="myModal4" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="align-items:center;">
+      <div class="modal-header" style="align-self: normal;">
+        <h4 class="modal-title">Bike Warehouse Project</h4>
+        <span><button type="button" class="close" data-dismiss="modal">&times;</button></span>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Description -->
+        <h5>Bike Warehouse is a webapplication designed for companies specialized in trading bikes. 
+           Users can browse bikes like in catalogue and also add own comments. Admin funcionality is much wider...
+        </h5>
+        <hr>
+        
+        <!-- Functionality -->
+        
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                 Guest functionality
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Browsing bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Searching bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Sorting bikes - few kinds</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Displaying user profiles</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                 User functionality
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Guest functionality</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Adding comments to bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Removing own comments</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                 Admin functionality
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> User functionality</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Adding new bike</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Editing existing bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Deleting bikes</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Various supply summary</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Searching users</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Deleting users</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Giving Admin authority to users</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        
+        <!-- Videos, diagrams, schemas -->
+        
+        <p>Below a video presenting application abilities...</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <hr>
+        <p>... and the app code presentation</p>
+        <iframe  width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <hr>
+        <p>Diagram demonstrating simplified application workflow</p>
+        <div><img class="img-responsive img-thumbnail" src="img/projects/diagram-bike-warehouse.jpg"></div>
+        <hr>
+        <p>MySQL database structure</p>
+        <div><img class="img-responsive img-thumbnail" src="img/projects/db-schema-bike-warehouse.jpg"></div>
+      </div>
+      <hr>
+      
+      <!-- Technologies used -->
+      
+      <h5 style="text-align: center">Technologies used</h5>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+               Backend
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Java 10</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Spring 5 (Security, MVC, Core)</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Hibernate 5 (CRUD, Validator)</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Maven</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> MySQL</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+               Frontend
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-check-square"></i> HTML 5</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> CSS 3</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Bootstrap 4</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Font Awesoe</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> Date Picker</li>
+              <li class="list-group-item"><i class="fas fa-check-square"></i> FancyBox - pictures preview</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      
+      <p><i class="fas fa-2x fa-calendar-alt"></i> Done: September 2018</p> 
+      <br>
+      <a href="https://github.com/leszek55-21/bike-warehouse-repo"><p><i class="fab fa-2x fa-github"></i> Github</p></a>
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close project details</button>
+      </div>
+    </div>
+
+  </div>
+</div> <!-- end of modal -->
+    
+  <footer id="main-footer">
+    Copyright &copy; 2018
+  </footer>
+
+  <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
