@@ -6,12 +6,16 @@
    <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
+    
+ 
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -32,6 +36,101 @@
   }
   
   </style>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    
+    /*1st modal
+      /* Get iframe src attribute value i.e. YouTube video url
+      and store it in a variable */
+      var urlFirstVid = $("#player1").attr('src');
+      
+      /* Assign empty url value to the iframe src attribute when
+      modal hide, which stop the video playing */
+      $("#myModal1").on('hide.bs.modal', function(){
+          $("#player1").attr('src', '');
+      });
+      
+      /* Assign the initially stored url back to the iframe src
+      attribute when modal is displayed again */
+      $("#myModal1").on('show.bs.modal', function(){
+          $("#player1").attr('src', urlFirstVid);
+      });
+      
+      var urlSecondVid = $("#player2").attr('src');
+      
+      $("#myModal1").on('hide.bs.modal', function(){
+          $("#player2").attr('src', '');
+      });
+      
+      $("#myModal1").on('show.bs.modal', function(){
+          $("#player2").attr('src', urlSecondVid);
+      });
+      
+    /*2nd modal*/
+      var urlThirdVid = $("#player3").attr('src');
+      
+      $("#myModal2").on('hide.bs.modal', function(){
+          $("#player3").attr('src', '');
+      });
+      
+      $("#myModal2").on('show.bs.modal', function(){
+          $("#player3").attr('src', urlThirdVid);
+      });
+      
+      var urlFourthVid = $("#player4").attr('src');
+      
+      $("#myModal2").on('hide.bs.modal', function(){
+          $("#player4").attr('src', '');
+      });
+      
+      $("#myModal2").on('show.bs.modal', function(){
+          $("#player4").attr('src', urlFourthVid);
+      });
+      
+      /*3rd modal*/
+      var urlFifthVid = $("#player5").attr('src');
+      
+      $("#myModal3").on('hide.bs.modal', function(){
+          $("#player5").attr('src', '');
+      });
+      
+      $("#myModal3").on('show.bs.modal', function(){
+          $("#player5").attr('src', urlFifthVid);
+      });
+      
+      var urlSixthVid = $("#player6").attr('src');
+      
+      $("#myModal3").on('hide.bs.modal', function(){
+          $("#player6").attr('src', '');
+      });
+      
+      $("#myModal3").on('show.bs.modal', function(){
+          $("#player6").attr('src', urlSixthVid);
+      });
+      
+      /*4th modal*/
+      var urlSeventhVid = $("#player7").attr('src');
+      
+      $("#myModal4").on('hide.bs.modal', function(){
+          $("#player7").attr('src', '');
+      });
+      
+      $("#myModal4").on('show.bs.modal', function(){
+          $("#player7").attr('src', urlSeventhVid);
+      });
+      
+      var urlEighthVid = $("#player8").attr('src');
+      
+      $("#myModal4").on('hide.bs.modal', function(){
+          $("#player8").attr('src', '');
+      });
+      
+      $("#myModal4").on('show.bs.modal', function(){
+          $("#player8").attr('src', urlEighthVid);
+      });
+    
+  });
+  </script>
 </head>
 
 <body>
@@ -206,10 +305,10 @@
         <!-- Videos, diagrams, schemas -->
         
         <p>Below a video presenting application abilities...</p>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="player1" width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allowfullscreen></iframe>
         <hr>
         <p>... and the app code presentation</p>
-        <iframe  width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="player2" width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <hr>
         <p>Diagram demonstrating simplified application workflow</p>
         <div><img class="img-responsive img-thumbnail" src="img/projects/diagram-bike-warehouse.jpg"></div>
@@ -332,10 +431,10 @@
         <!-- Videos, diagrams, schemas -->
         
         <p>Below a video presenting application abilities...</p>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="player3" width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <hr>
         <p>... and the app code presentation</p>
-        <iframe  width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="player4" width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <hr>
         <p>MongoDB Models</p>
         <div><img class="img-responsive img-thumbnail" src="img/projects/camping-picker-mongoDB-model.jpg"></div>
@@ -425,10 +524,10 @@
         <!-- Videos, diagrams, schemas -->
         
         <p>Below a video presenting application abilities...</p>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="player5" width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <hr>
         <p>... and the app code presentation</p>
-        <iframe  width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="player6" width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <hr>
       </div>
       <hr>
@@ -547,10 +646,10 @@
         <!-- Videos, diagrams, schemas -->
         
         <p>Below a video presenting application abilities...</p>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="player7" width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <hr>
         <p>... and the app code presentation</p>
-        <iframe  width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="player8" width="100%" height="315" src="https://www.youtube.com/embed/WEQnzs8wl6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <hr>
         <p>Diagram demonstrating simplified application workflow</p>
         <div><img class="img-responsive img-thumbnail" src="img/projects/diagram-bike-warehouse.jpg"></div>
@@ -614,9 +713,9 @@
   </footer>
 
   <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 
